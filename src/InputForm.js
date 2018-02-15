@@ -19,9 +19,9 @@ export class InputForm extends React.Component {
   render() {
     return(
       <form className="commentForm" onSubmit={this.handlesubmit.bind(this)}>
-        <input type="text" placeholder="タスク名" ref="title" />
-        <input type="text" placeholder="詳細" ref="text" />
-        <button>追加</button>
+        <input className="input ttl" type="text" placeholder="タスク名" ref="title" />
+        <input className="input txt" ype="text" placeholder="詳細" ref="text" />
+        <button className="btn" >追加</button>
       </form>
     )
   }

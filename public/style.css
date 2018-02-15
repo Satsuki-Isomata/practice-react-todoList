@@ -1,0 +1,55 @@
+@charset 'UTF-8';
+
+input, button, textarea, select {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+body {
+  width: 100%;
+}
+.content {
+  width: 1000px;
+  margin: 50px auto;
+}
+.ttl {
+  color: #333;
+}
+.input {
+  width: 200px;
+  border: 1px solid #666;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 15px;
+}
+.input.txt {
+  width: 400px;
+}
+.btn {
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.todo {
+  margin-top: 40px;
+  display: flex;
+}
+.todo-inner {
+  
+  align-self: center;
+  margin-right: 30px;
+}
+.todo-inner.ttl {
+  min-width: 200px;
+}
+.todo-inner.txt {
+  min-width: 400px;
+}

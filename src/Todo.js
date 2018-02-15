@@ -1,10 +1,10 @@
-import React from 'react';
-import { render } from 'react-dom';
+import React from 'react'
+import { render } from 'react-dom'
 
-import { InputForm } from './InputForm.js';
-import { TodoList } from './TodoList.js';
+import { InputForm } from './InputForm.js'
+import { TodoList } from './TodoList.js'
 
-export class Todo extends React.Component{
+export class Todo extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -19,7 +19,7 @@ export class Todo extends React.Component{
   handleTodoDelete(id) {
     this.setState({
       todos: this.state.todos.filter((todo) => {
-        return todo.id !== id;
+        return todo.id !== id
       })
     });
   }
@@ -27,7 +27,7 @@ export class Todo extends React.Component{
   render() {
     const todoItems = this.state.todos.map((todo) => {
       return (
-        <TodoList key={todo.id} todo={todo} onTodoDelate={this.handleTodoDelate.bind(this)} />
+        <TodoList key={todo.id} todo={todo} onTodoDelate={this.handleTodoDelete.bind(this)} />
       )
     })
     return (
